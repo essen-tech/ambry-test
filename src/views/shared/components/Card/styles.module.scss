@@ -1,0 +1,77 @@
+@import "all_utils";
+
+.card {
+  margin-bottom: 122px;
+  position: relative;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 48px;
+  }
+}
+
+.image-holder {
+  aspect-ratio: 378 / 520;
+  img {
+    width: 100%;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  h3 {
+    color: $primary;
+    margin-top: 16px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 34px;
+      line-height: 46px;
+    }
+  }
+
+  p {
+    color: $dark-grey;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  small {
+    display: block;
+    margin-top: 16px;
+    color: $primary;
+    font-size: 12px;
+    line-height: 16px;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 10px;
+    }
+  }
+
+  a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  i {
+    display: none;
+    color: $dark-grey;
+    @include media-breakpoint-down(sm) {
+      display: block;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  }
+}

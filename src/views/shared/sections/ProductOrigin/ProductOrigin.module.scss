@@ -1,0 +1,188 @@
+@import "all_utils";
+
+.product-origin {
+  background-color: $secondary;
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 120px;
+    padding-bottom: 88px;
+    background-color: $white;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .main-figure {
+    display: flex;
+    margin-bottom: 42px;
+    justify-content: space-between;
+
+    figcaption {
+      flex: 0 1 62%;
+      padding-top: 136px;
+      color: $primary;
+
+      h1 {
+        line-height: 142px;
+      }
+
+      h2 {
+        font-size: 80px;
+        line-height: 142px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding-top: 42px;
+        flex: 0 1 60%;
+
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+        }
+
+        @include media-breakpoint-down(md) {
+          padding-top: 0;
+
+          h1 {
+            font-size: 110px;
+            line-height: 115px;
+          }
+
+          h2 {
+            font-size: 34px;
+            line-height: 46px;
+            margin-top: 29px;
+          }
+        }
+
+        @include media-breakpoint-down(sm) {
+          h1 {
+            font-size: 56px;
+            line-height: 64px;
+          }
+
+          h2 {
+            font-size: 21px;
+            line-height: 30px;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      margin-bottom: 88px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      margin-bottom: 47px;
+    }
+  }
+
+  .main-image {
+    width: 33%;
+    flex: 0 1 33%;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      & > div {
+        max-width: unset !important;
+      }
+    }
+
+    @include media-breakpoint-down(lg) {
+      width: 40%;
+      flex: 0 1 40%;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-top: 88px;
+      width: 70%;
+      flex: 1 0 auto;
+      align-self: center;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 47px;
+      width: 75%;
+      flex: 1 0 auto;
+    }
+  }
+
+  .secondary-figure {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: $primary;
+
+    figcaption {
+      flex: 0 1 30%;
+      padding-bottom: 107px;
+      order: 2;
+      text-align: right;
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        flex: 0 1 40%;
+        padding-bottom: 0;
+      }
+
+      @include media-breakpoint-down(md) {
+        text-align: left;
+        margin-top: 40px;
+      }
+
+      @include media-breakpoint-down(md) {
+        p {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+    }
+  }
+
+  .secondary-image {
+    width: 50%;
+    flex: 0 1 50%;
+
+    .image {
+      width: 100%;
+      height: 100%;
+      & > div {
+        max-width: unset !important;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      flex: 1 0 auto;
+
+      & > div {
+        margin-left: calc((-100vw + 720px) / 2);
+        margin-right: calc((-100vw + 720px) / 2);
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      & > div {
+        margin-left: -24px;
+        margin-right: -24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+export default {
+  translation: {
+    validators: {
+      missing: "Ange {{- name, lower}}",
+      number_low: "{{- name, capital}} måste vara minst {{value}} kr",
+      number_high: "{{- name, capital}} får vara max {{value}} kr",
+      digit: "Det saknas en siffra i ditt {{- name, lower}}",
+      digit_plural: "Det saknas {{count}} siffror i ditt {{- name, lower}}",
+      digit_to_many: "{{count}} siffra för mycket i ditt {{- name, lower}}",
+      digit_to_many_plural: "{{count}} för många siffror i ditt {{- name, lower}}",
+      digits_missing: "Det saknas siffror i ditt {{- name, lower}}",
+      digits_to_many: "Det är för många siffror i ditt {{- name, lower}}",
+      email: "Din angivna email är inte giltig",
+      pidn: "Ditt angivna personummer är inte giltigt",
+    },
+    misc: {
+      cancel: "Avbryt",
+      back: "Tillbaka",
+      move_on: "Gå vidare",
+      edit: "Redigera",
+      pidn: "Personnummer",
+      mobile: "Telefonnummer",
+      email: "Email",
+      password: "Lösenord",
+      login: "Logga in",
+      save: "Spara",
+      currency: "kr",
+      currency_per_year: "kr/år",
+    },
+  },
+};

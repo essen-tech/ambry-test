@@ -1,0 +1,113 @@
+@import "all_utils";
+
+.product {
+  background: $secondary;
+  &.bigger {
+    .section-image {
+      height: 880px;
+      @include media-breakpoint-down(md) {
+        height: 540px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: 400px;
+      }
+    }
+    .content {
+      h1 {
+        font-size: 144px;
+        line-height: 156px;
+
+        @include media-breakpoint-down(md) {
+          font-size: 50px;
+          line-height: 58px;
+        }
+      }
+    }
+  }
+
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-image {
+    position: relative;
+    height: 517px;
+
+    & > a {
+      z-index: 2;
+      cursor: pointer;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      height: 540px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      height: 400px;
+    }
+  }
+
+  .content-row {
+    height: 100%;
+  }
+
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    max-width: 55%;
+
+    color: $primary;
+    padding-bottom: 59px;
+
+    @include media-breakpoint-down(md) {
+      max-width: 60%;
+      padding-bottom: 56px;
+    }
+
+    @include media-breakpoint-down(md) {
+      max-width: 80%;
+      padding-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 80px;
+      line-height: 90px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 50px;
+        line-height: 58px;
+      }
+    }
+
+    p {
+      font-family: "Ogg";
+      margin-top: 24px;
+      font-size: 21px;
+      line-height: 30px;
+
+      @include media-breakpoint-down(md) {
+        width: 60%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 80%;
+      }
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 24px;
+    }
+  }
+}

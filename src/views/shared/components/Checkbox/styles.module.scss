@@ -1,0 +1,41 @@
+@import 'all_utils';
+
+$size: 16px;
+
+.wrapper {
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: 0 !important;
+  height: $size;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  span {
+    @extend .flex_fix_center_col;
+    position: relative;
+    vertical-align: middle;
+    height: $size;
+    width: $size;
+    border: 1px solid $primary;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: background-color 200ms ease;
+    img {
+      transition: opacity 200ms ease;
+      opacity: 0;
+    }
+  }
+
+  input:checked ~ span {
+    background-color: $primary;
+    img {
+      opacity: 1;
+    }
+  }
+}

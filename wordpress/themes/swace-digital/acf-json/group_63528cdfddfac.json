@@ -1,0 +1,180 @@
+{
+  "key": "group_63528cdfddfac",
+  "title": "Section Text and Image Scatter",
+  "fields": [
+    {
+      "key": "field_63528d0164411",
+      "label": "Description",
+      "name": "description",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": ""
+    },
+    {
+      "key": "field_635294bb64412",
+      "label": "Text and Images Group",
+      "name": "text_and_images_groups",
+      "type": "repeater",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "collapsed": "",
+      "min": 0,
+      "max": 0,
+      "layout": "table",
+      "button_label": "",
+      "sub_fields": [
+        {
+          "key": "field_635294d464413",
+          "label": "Text and Images",
+          "name": "text_and_images",
+          "type": "group",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": "",
+          "sub_fields": [
+            {
+              "key": "field_635294ea348d7",
+              "label": "Text",
+              "name": "text",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_635294f2348d8",
+              "label": "Images",
+              "name": "images",
+              "type": "repeater",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "collapsed": "",
+              "min": 0,
+              "max": 0,
+              "layout": "table",
+              "button_label": "",
+              "sub_fields": [
+                {
+                  "key": "field_63529501348d9",
+                  "label": "Image",
+                  "name": "image",
+                  "type": "image",
+                  "instructions": "",
+                  "required": 0,
+                  "conditional_logic": 0,
+                  "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                  },
+                  "return_format": "array",
+                  "preview_size": "medium",
+                  "library": "all",
+                  "min_width": "",
+                  "min_height": "",
+                  "min_size": "",
+                  "max_width": "",
+                  "max_height": "",
+                  "max_size": "",
+                  "mime_types": ""
+                }
+              ]
+            }
+          ],
+          "layout": "block"
+        }
+      ]
+    },
+    {
+      "key": "field_63529512348da",
+      "label": "Link",
+      "name": "link",
+      "type": "link",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array"
+    },
+    {
+      "key": "field_63529524348db",
+      "label": "Background Color",
+      "name": "background_color",
+      "type": "color_picker",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": false,
+  "description": "",
+  "modified": 1666356641
+}

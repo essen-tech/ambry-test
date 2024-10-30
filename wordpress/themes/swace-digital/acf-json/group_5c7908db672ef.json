@@ -1,0 +1,538 @@
+{
+  "key": "group_5c7908db672ef",
+  "title": "Page",
+  "fields": [
+    {
+      "key": "field_5cfe5606cd12e",
+      "label": "Template",
+      "name": "template",
+      "type": "select",
+      "instructions": "",
+      "required": 1,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "page_builder": "Page Builder"
+      },
+      "default_value": "page_builder",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 0,
+      "return_format": "value",
+      "ajax": 0,
+      "placeholder": ""
+    },
+    {
+      "key": "field_5c7908dfaba39",
+      "label": "Sections",
+      "name": "sections",
+      "type": "flexible_content",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layouts": {
+        "layout_5ced7b693e2f8": {
+          "key": "layout_5ced7b693e2f8",
+          "name": "hero",
+          "label": "Hero",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635002ef240e4",
+              "label": "Hero",
+              "name": "hero",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_635000fbb04fd"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffc1fd062386": {
+          "key": "layout_5ffc1fd062386",
+          "name": "text_and_image_scatter",
+          "label": "Text and Image Scatter",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_63529552e4955",
+              "label": "Text and Image Scatter",
+              "name": "text_and_image_scatter",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_63528cdfddfac"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffc5ae29303e": {
+          "key": "layout_5ffc5ae29303e",
+          "name": "quote",
+          "label": "Quote",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f1d8df2bb",
+              "label": "Quote",
+              "name": "quote",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f17eb04a1"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffc771f2759c": {
+          "key": "layout_5ffc771f2759c",
+          "name": "recipe_list",
+          "label": "Recipe List",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f5b31363c",
+              "label": "Recipe List",
+              "name": "recipe_list",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f373f1f78"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffd621602575": {
+          "key": "layout_5ffd621602575",
+          "name": "product",
+          "label": "Product",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6352bdec95d20",
+              "label": "Product",
+              "name": "product",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6352babc267cc"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_6000057d207cb": {
+          "key": "layout_6000057d207cb",
+          "name": "product_origin",
+          "label": "Product Origin",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f7b562479",
+              "label": "Product Origin",
+              "name": "product_origin",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f72adda20"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffec362eab5e": {
+          "key": "layout_5ffec362eab5e",
+          "name": "video",
+          "label": "Video",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635900c0ae226",
+              "label": "Video",
+              "name": "video",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6359003d36aa9"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5fff0d10e072c": {
+          "key": "layout_5fff0d10e072c",
+          "name": "nutrition",
+          "label": "Nutrition",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f02c2a116",
+              "label": "Nutrition",
+              "name": "nutrition",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358eeabefbaf"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffeb4c973a20": {
+          "key": "layout_5ffeb4c973a20",
+          "name": "recipe",
+          "label": "Recipe",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358fb6cdde28",
+              "label": "Recipe",
+              "name": "recipe",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f8c05cf17"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ff4644d281ef": {
+          "key": "layout_5ff4644d281ef",
+          "name": "cards_row",
+          "label": "Cards Row",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6352a1e4e46f2",
+              "label": "Cards Row",
+              "name": "cards_row",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6352a15937b6e"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ff73201c9c2c": {
+          "key": "layout_5ff73201c9c2c",
+          "name": "faq",
+          "label": "FAQ",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6352a2efac338",
+              "label": "FAQ",
+              "name": "faq",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6352a2777205c"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ff8541f9bbf2": {
+          "key": "layout_5ff8541f9bbf2",
+          "name": "person",
+          "label": "Person",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635015cdb52c0",
+              "label": "Person",
+              "name": "person",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_635014730aad3"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_60054373ede0a": {
+          "key": "layout_60054373ede0a",
+          "name": "statement",
+          "label": "Statement",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635166166af52",
+              "label": "Statement",
+              "name": "statement",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_63515fea832b7"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_6005669d75173": {
+          "key": "layout_6005669d75173",
+          "name": "text_and_image",
+          "label": "Text and Image",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358ff5454f91",
+              "label": "Text and Image",
+              "name": "text_and_image",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358fc9987def"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_6005a233176de": {
+          "key": "layout_6005a233176de",
+          "name": "contact",
+          "label": "Contact",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635298721298f",
+              "label": "Contact",
+              "name": "contact",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6352979b82854"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_6006876837872": {
+          "key": "layout_6006876837872",
+          "name": "privacy_policy",
+          "label": "Privacy Policy",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635297147c813",
+              "label": "Privacy Policy",
+              "name": "privacy_policy",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6352968621a30"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        }
+      },
+      "button_label": "Add Section",
+      "min": "",
+      "max": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "excerpt",
+    "discussion",
+    "comments",
+    "revisions",
+    "categories",
+    "tags"
+  ],
+  "active": true,
+  "description": "",
+  "modified": 1666777294
+}

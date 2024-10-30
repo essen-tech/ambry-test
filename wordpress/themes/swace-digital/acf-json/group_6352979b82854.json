@@ -1,0 +1,219 @@
+{
+  "key": "group_6352979b82854",
+  "title": "Section Contact",
+  "fields": [
+    {
+      "key": "field_635297a4ac1c1",
+      "label": "Description",
+      "name": "description",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": ""
+    },
+    {
+      "key": "field_635297bfac1c2",
+      "label": "Contact Info",
+      "name": "contact_info",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_635297e3ac1c3",
+          "label": "Address",
+          "name": "address",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_635297e9ac1c4",
+          "label": "City",
+          "name": "city",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_635297f8ac1c5",
+          "label": "Post Code",
+          "name": "post_code",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        },
+        {
+          "key": "field_63529802ac1c6",
+          "label": "Email",
+          "name": "email",
+          "type": "email",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": ""
+        },
+        {
+          "key": "field_6352980fac1c7",
+          "label": "Phone Number",
+          "name": "phone_number",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "50",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    },
+    {
+      "key": "field_63529825ac1c8",
+      "label": "Social Media Links",
+      "name": "social_media_links",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_63529833ac1c9",
+          "label": "Linkedin",
+          "name": "linkedin",
+          "type": "url",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "33",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": ""
+        },
+        {
+          "key": "field_6352983eac1ca",
+          "label": "Instagram",
+          "name": "instagram",
+          "type": "url",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "33",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": ""
+        },
+        {
+          "key": "field_63529846ac1cb",
+          "label": "Twitter",
+          "name": "twitter",
+          "type": "url",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "33",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": false,
+  "description": "",
+  "modified": 1666357334
+}

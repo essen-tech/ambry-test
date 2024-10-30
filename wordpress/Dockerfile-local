@@ -1,0 +1,37 @@
+FROM wordpress
+
+RUN mv "$PHP_INI_DIR"/php.ini-development "$PHP_INI_DIR"/php.ini
+
+# install_wordpress.sh & misc. dependencies
+RUN apt-get update; \
+  apt-get install -yq mariadb-client netcat sudo less git unzip wget nano
+
+# Increase Wordpress Upload Limit
+RUN touch /usr/local/etc/php/conf.d/uploads.ini \
+  && echo "upload_max_filesize = 64M;" >> /usr/local/etc/php/conf.d/uploads.ini \
+  && echo "post_max_size = 128M;" >> /usr/local/etc/php/conf.d/uploads.ini
+
+# wp-cli
+RUN curl -sL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o wp; \
+  chmod +x wp; \
+  mv wp /usr/local/bin/; \
+  mkdir /var/www/.wp-cli;
+
+# composer
+RUN curl -sL https://raw.githubusercontent.com/composer/getcomposer.org/master/web/installer | php; \
+  mv composer.phar /usr/local/bin/composer; \
+  mkdir /var/www/.composer; \
+  chown www-data:www-data /var/www/.composer
+
+# include composer-installed executables in $PATH
+ENV PATH="/var/www/.composer/vendor/bin:${PATH}"
+
+COPY docker/SWACE_PLACEHOLDER.png /var/tmp/SWACE_PLACEHOLDER.png
+COPY docker/wp-cli.yml /var/www/html/wp-cli.yml
+COPY docker/install_wordpress.sh /usr/local/bin/install_wordpress
+RUN chmod +x /usr/local/bin/install_wordpress
+COPY docker/docker_start.sh /usr/local/bin/docker_start
+RUN chmod +x /usr/local/bin/docker_start
+
+RUN sed -i 's/80/8084/' /etc/apache2/ports.conf /etc/apache2/sites-enabled/000-default.conf
+EXPOSE 8084

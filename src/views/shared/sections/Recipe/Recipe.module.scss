@@ -1,0 +1,200 @@
+@import "all_utils";
+
+.recipe {
+  background: $white;
+  @include media-breakpoint-down(md) {
+  }
+
+  .video-holder {
+    margin-right: -24px;
+    margin-left: -24px;
+  }
+
+  .general-information {
+    padding-top: 130px;
+    padding-bottom: 132px;
+    color: $primary;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 16px;
+      padding-bottom: 48px;
+    }
+
+    .properties {
+      & > div {
+        &:not(:first-of-type) {
+          margin-top: 32px;
+
+          @include media-breakpoint-down(sm) {
+            margin-top: 0;
+            padding-right: 24px;
+          }
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      h3 {
+        @include media-breakpoint-down(sm) {
+          margin-top: 0;
+          font-size: 32px;
+          line-height: 39px;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 48px;
+      }
+    }
+  }
+
+  .content {
+    padding-top: 200px;
+    padding-bottom: 162px;
+    color: $primary;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 64px;
+      padding-bottom: 80px;
+    }
+
+    h2 {
+      margin-bottom: 64px;
+
+      @include media-breakpoint-down(md) {
+        margin-bottom: 24px;
+      }
+
+      small {
+        font-size: 32px;
+        line-height: 42px;
+
+        @include media-breakpoint-down(lg) {
+          font-size: 21px;
+          line-height: 29px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    h4  {
+      font-weight: 500;
+    }
+
+    blockquote {
+      margin-top: 66px;
+      width: 80%;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 24px;
+        &:last-of-type {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  .ingredients {
+    @include media-breakpoint-up(lg) {
+      padding-left: 40px;
+    }
+  }
+
+  .ingredient-list {
+    &:not(:first-of-type) {
+      margin-top: 29px;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 20px;
+        margin-bottom: 60px;
+      }
+    }
+
+    h4 {
+      @include media-breakpoint-down(sm) {
+        color: $dark-grey;
+        font-family: "BasisGrotesquePro";
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    li {
+      font-size: 21px;
+      line-height: 29px;
+      font-family: "Ogg";
+
+      @include media-breakpoint-down(sm) {
+        font-family: "BasisGrotesquePro";
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark-grey;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+
+  .instruction-list {
+    li {
+      display: flex;
+      &:not(:last-of-type) {
+        margin-bottom: 47px;
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 40px;
+        }
+      }
+
+      small {
+        font-family: "Ogg";
+        font-size: 64px;
+        line-height: 56px;
+        min-width: 60px;
+        max-width: 60px;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 50px;
+          line-height: 50px;
+          min-width: 44px;
+          max-width: 44px;
+        }
+      }
+
+      p {
+        color: $dark-grey;
+        font-size: 16px;
+        line-height: 22px;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 14px;
+          line-height: 20px;
+          color: $dark-grey;
+        }
+      }
+    }
+  }
+}

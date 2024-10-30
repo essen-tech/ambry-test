@@ -1,0 +1,31 @@
+version: "3"
+services:
+  wp-headless-wholesum:
+    build:
+      context: .
+      dockerfile: Dockerfile-local
+    command: bash -c 'start_when_mysql_ready'
+    container_name: wp-headless-wholesum
+    depends_on:
+      - db-headless-wholesum
+    env_file: ./.env
+    ports:
+      - "8084:8084"
+    volumes:
+      - ./themes/swace-digital:/var/www/html/wp-content/themes/swace-digital
+      - ./uploads:/var/www/html/wp-content/uploads
+      - ./docker/start_when_mysql_ready.sh:/usr/local/bin/start_when_mysql_ready
+      - ./docker/docker_start.sh:/usr/local/bin/docker_start
+      - ./docker/install_wordpress.sh:/usr/local/bin/install_wordpress
+  db-headless-wholesum:
+    container_name: db-headless-wholesum
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=${WORDPRESS_DB_NAME}
+      - MYSQL_PASSWORD=${WORDPRESS_DB_PASSWORD}
+      - MYSQL_USER=${WORDPRESS_DB_USER}
+    image: mariadb
+    ports:
+      - "3308:3306"
+volumes:
+  db-data: {}

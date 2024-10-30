@@ -1,0 +1,361 @@
+@import "all_utils";
+
+.contact {
+  background-color: $secondary;
+  padding-top: 180px;
+  padding-bottom: 167px;
+  @include media-breakpoint-down(md) {
+    padding-top: 40px;
+    padding-bottom: 120px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+  }
+
+  .description {
+    font-family: "Ogg";
+    color: $dark-grey;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 30px;
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 80px;
+    }
+  }
+
+  .address {
+    margin-top: 228px;
+    color: $dark-grey;
+    font-size: 16px;
+    line-height: 24px;
+    a {
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-grey;
+      display: inline-block;
+
+      &:before {
+        background: $dark-grey;
+      }
+
+      &:hover {
+        color: $dark-grey;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    &.show-in-mobile {
+      display: none;
+      @include media-breakpoint-down(sm) {
+        display: block;
+        margin-top: 80px;
+      }
+    }
+  }
+
+  .social-media {
+    margin-top: 112px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      &:not(:first-of-type) {
+        margin-left: 24px;
+      }
+      a {
+        display: inline-block;
+        i {
+          color: $green;
+          font-size: 24px;
+          transition: 0.2s ease color;
+        }
+
+        &:hover {
+          i {
+            color: $light-green;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+    &.show-in-mobile {
+      display: none;
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .form {
+  }
+
+  .form-content {
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: 27px;
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 37px;
+        }
+      }
+    }
+  }
+
+  .form-footer {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 32px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .input-1 {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+    }
+
+    input {
+      font-family: "Ogg";
+      height: 55px;
+      font-size: 21px;
+      line-height: 29px;
+      color: $primary;
+      padding: 16px 0 10px;
+      border: 0;
+      border-bottom: 1px solid rgba(0, 53, 60, 0.4);
+      width: 100%;
+      background: transparent;
+      outline: none !important;
+      transition: color 0.3s ease;
+
+      @include media-breakpoint-down(sm) {
+        height: 45px;
+      }
+
+      ~ label {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        top: 4px;
+        transition: 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      &:focus {
+        color: rgba(18, 18, 18, 0.5);
+        border-bottom: 1px solid rgba(0, 53, 60, 1);
+        ~ label {
+          color: $primary;
+          top: -16px;
+          font-size: 16px;
+          transition: 0.3s;
+        }
+      }
+
+      &:not(:focus) {
+        &:hover {
+          ~ label {
+            color: $light-green;
+          }
+        }
+      }
+
+      &.has-filled {
+        border-bottom: 1px solid rgba(0, 53, 60, 1);
+        ~ label {
+          top: -16px;
+          font-size: 12px;
+          transition: 0.3s;
+        }
+      }
+
+      &.has-error {
+        color: $red;
+        border-color: $red;
+      }
+    }
+
+    label {
+      font-family: "Ogg";
+      font-size: 32px;
+      line-height: 40px;
+      color: $primary;
+      pointer-events: none;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 21px;
+        line-height: 30px;
+      }
+    }
+
+    span {
+      display: block;
+      text-align: right;
+      margin-top: 8px;
+      color: $red;
+      font-size: 14px;
+      line-height: 20px;
+      position: absolute;
+      width: 100%;
+      bottom: -20px;
+    }
+  }
+
+  .textarea-1 {
+    position: relative;
+    label {
+      font-family: "Ogg";
+      font-size: 32px;
+      line-height: 40px;
+      color: $primary;
+      pointer-events: none;
+      display: block;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 21px;
+        line-height: 30px;
+      }
+    }
+
+    textarea {
+      margin-top: 16px;
+      width: 100%;
+      border: 0;
+      outline: none !important;
+      height: 300px;
+      font-size: 21px;
+      line-height: 29px;
+      font-family: "Ogg";
+      padding: 10px;
+      color: $primary;
+      resize: none;
+
+      @include media-breakpoint-down(sm) {
+        height: 220px;
+      }
+      &.has-error {
+        color: $red;
+        border-color: $red;
+        border: 1px solid;
+      }
+    }
+
+    span {
+      display: block;
+      text-align: right;
+      margin-top: 8px;
+      color: $red;
+      font-size: 14px;
+      line-height: 20px;
+      position: absolute;
+      width: 100%;
+      bottom: -20px;
+    }
+  }
+
+  .checkbox-1 {
+    input {
+      position: absolute;
+      opacity: 0;
+      z-index: -1;
+      + label {
+        &:after {
+          content: "";
+          top: 4px;
+          left: 4px;
+          width: 12px;
+          height: 12px;
+          background: $primary;
+          border: 1px solid $primary;
+          border-radius: 50%;
+        }
+
+        &:before {
+          border-radius: 50%;
+        }
+      }
+
+      &:checked {
+        + label {
+          &:after {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+          }
+        }
+      }
+    }
+
+    label {
+      position: relative;
+      display: inline-block;
+      padding: 0 0 0 32px;
+      height: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      cursor: pointer;
+      color: $primary;
+
+      a {
+        color: $primary;
+        &:before {
+          background: $primary;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      &:before,
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        -webkit-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
+        transition: 0.3s all ease;
+      }
+
+      &:after {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+      }
+
+      &:before {
+        content: "";
+        border: 1px solid $primary;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 32px;
+    }
+  }
+}

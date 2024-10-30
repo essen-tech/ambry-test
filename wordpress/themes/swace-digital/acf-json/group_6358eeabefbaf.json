@@ -1,0 +1,266 @@
+{
+  "key": "group_6358eeabefbaf",
+  "title": "Section Nutrition",
+  "fields": [
+    {
+      "key": "field_6358eeb3198ba",
+      "label": "Tags",
+      "name": "tags",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_6358ef09198bb",
+      "label": "Ingredients",
+      "name": "ingredients",
+      "type": "text",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "prepend": "",
+      "append": "",
+      "maxlength": ""
+    },
+    {
+      "key": "field_6358ef0f198bc",
+      "label": "Description",
+      "name": "description",
+      "type": "textarea",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": "",
+      "rows": 4,
+      "new_lines": ""
+    },
+    {
+      "key": "field_6358ef1b198bd",
+      "label": "Image",
+      "name": "image",
+      "type": "image",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    },
+    {
+      "key": "field_6358ef35198be",
+      "label": "Nutrition Table",
+      "name": "nutrition_table",
+      "type": "group",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "layout": "block",
+      "sub_fields": [
+        {
+          "key": "field_6358ef43198bf",
+          "label": "Header Row",
+          "name": "header_row",
+          "type": "repeater",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "33",
+            "class": "",
+            "id": ""
+          },
+          "collapsed": "",
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "",
+          "sub_fields": [
+            {
+              "key": "field_6358ef54198c0",
+              "label": "Column Name",
+              "name": "column_name",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        },
+        {
+          "key": "field_6358ef71198c1",
+          "label": "Rows",
+          "name": "rows",
+          "type": "repeater",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "67",
+            "class": "",
+            "id": ""
+          },
+          "collapsed": "",
+          "min": 0,
+          "max": 0,
+          "layout": "table",
+          "button_label": "",
+          "sub_fields": [
+            {
+              "key": "field_6358ef83198c2",
+              "label": "Nutrition Name",
+              "name": "nutrition_name",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_6358ef90198c3",
+              "label": "Amount",
+              "name": "amount",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            },
+            {
+              "key": "field_6358ef98198c4",
+              "label": "Daily Value",
+              "name": "daily_value",
+              "type": "text",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "default_value": "",
+              "placeholder": "",
+              "prepend": "",
+              "append": "",
+              "maxlength": ""
+            }
+          ]
+        },
+        {
+          "key": "field_6358efae198c5",
+          "label": "Bottom Text",
+          "name": "bottom_text",
+          "type": "text",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "default_value": "",
+          "placeholder": "",
+          "prepend": "",
+          "append": "",
+          "maxlength": ""
+        }
+      ]
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ],
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "product"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": false,
+  "description": "",
+  "modified": 1666773447
+}

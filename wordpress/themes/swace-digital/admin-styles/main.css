@@ -1,0 +1,25 @@
+#wpcontent, #wpfooter {
+  margin-left: 180px;
+}
+
+#adminmenu, #adminmenu .wp-submenu, #adminmenuback, #adminmenuwrap {
+  width: 180px;
+}
+
+#adminmenu .wp-submenu {
+  left: 180px;
+}
+
+#preview-action {
+  display: none;
+}
+
+#sample-permalink {
+  visibility:collapse;
+  font-size: 0;
+}
+
+#editable-post-name {
+  visibility:visible;
+  font-size: 13px;
+}

@@ -1,0 +1,171 @@
+@import "all_utils";
+
+.footer {
+  background: $primary;
+  padding-top: 120px;
+  padding-bottom: 48px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 48px;
+    padding-bottom: 34px;
+  }
+}
+
+.navigation {
+  margin-bottom: 92px;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 80px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      &:not(:first-of-type) {
+        margin-left: 100px;
+
+        @include media-breakpoint-down(lg) {
+          margin-left: 60px;
+        }
+        @include media-breakpoint-down(md) {
+          margin-left: 0;
+          margin-top: 8px;
+        }
+      }
+
+      a {
+        font-family: "Ogg";
+        font-size: 32px;
+        line-height: 42px;
+        color: $secondary;
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: $light-green;
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  align-items: flex-end;
+
+  @include media-breakpoint-down(md) {
+    & > * {
+      &:first-child {
+        order: 3;
+      }
+    }
+  }
+}
+
+.social-media {
+  @include media-breakpoint-down(md) {
+    margin-bottom: 64px;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      &:not(:first-of-type) {
+        margin-left: 24px;
+      }
+      a {
+        display: inline-block;
+        i {
+          color: $secondary;
+          font-size: 24px;
+          transition: 0.2s ease color;
+        }
+
+        &:hover {
+          i {
+            color: $light-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  text-align: right;
+  font-size: 16px;
+  line-height: 22px;
+  color: $secondary;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 68px;
+    text-align: center;
+  }
+
+  address {
+  }
+
+  a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    color: $secondary;
+  }
+}
+
+.logo {
+  i {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 80px;
+    color: $secondary;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $light-green;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    text-align: center;
+
+    i {
+      font-size: 58px;
+    }
+  }
+}
+
+.extra {
+  padding-bottom: 80px;
+  & > * {
+    align-items: center;
+  }
+
+  figure {
+    text-align: right;
+    img {
+      width: 80%;
+    }
+  }
+
+  h3 {
+    color: $yellow;
+    font-size: 55px;
+    line-height: 64px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    color: $yellow;
+  }
+  .link-holder {
+    display: block;
+    margin-top: 22px;
+  }
+}

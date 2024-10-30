@@ -1,0 +1,71 @@
+@import "all_utils";
+
+.button {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
+  line-height: 22px;
+  text-align: center;
+  color: $dark-grey;
+  padding-left: 25px;
+  padding-right: 18px;
+  border: 1px solid;
+  border-color: $dark-grey;
+  min-width: 182px;
+  border-radius: 48px;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  @include media-breakpoint-up(xl) {
+    opacity: 1;
+    font-size: 16px;
+  }
+
+  i {
+    color: $dark-grey;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    color: $primary;
+  }
+
+  &:hover {
+    background-color: $light-green;
+    border: 1px solid $light-green;
+    color: $secondary;
+    i {
+      color: $secondary;
+    }
+  }
+
+  &.bigger {
+    min-width: 248px;
+    @include media-breakpoint-down(md) {
+      min-width: 199px;
+    }
+  }
+
+  &.reversed {
+    border-color: $secondary;
+    color: $secondary;
+    i {
+      color: $secondary;
+    }
+    &:hover {
+      border-color: $light-green;
+    }
+  }
+
+  &.block-in-mobile {
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+}
+
+.disabled {
+  opacity: 0.2;
+}

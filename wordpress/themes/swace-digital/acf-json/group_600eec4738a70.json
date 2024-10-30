@@ -1,0 +1,247 @@
+{
+  "key": "group_600eec4738a70",
+  "title": "Product",
+  "fields": [
+    {
+      "key": "field_600eebe207fe8",
+      "label": "Sections",
+      "name": "sections",
+      "type": "flexible_content",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "show_in_graphql": 1,
+      "layouts": {
+        "layout_5ced7b693e2f8": {
+          "key": "layout_5ced7b693e2f8",
+          "name": "hero",
+          "label": "Hero",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6350033f4982e",
+              "label": "Hero",
+              "name": "hero",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_635000fbb04fd"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffc771f2759c": {
+          "key": "layout_5ffc771f2759c",
+          "name": "recipe_list",
+          "label": "Recipe List",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f5d927e72",
+              "label": "Recipe List",
+              "name": "recipe_list",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f373f1f78"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffd621602575": {
+          "key": "layout_5ffd621602575",
+          "name": "product",
+          "label": "Product",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6352be1f564f5",
+              "label": "Product",
+              "name": "product",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6352babc267cc"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_6000057d207cb": {
+          "key": "layout_6000057d207cb",
+          "name": "product_origin",
+          "label": "Product Origin",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f7de7af13",
+              "label": "Product Origin",
+              "name": "product_origin",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f72adda20"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffec362eab5e": {
+          "key": "layout_5ffec362eab5e",
+          "name": "video",
+          "label": "Video",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635900d79aab4",
+              "label": "Video",
+              "name": "video",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6359003d36aa9"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5fff0d10e072c": {
+          "key": "layout_5fff0d10e072c",
+          "name": "nutrition",
+          "label": "Nutrition",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f085e4e4f",
+              "label": "Nutrition",
+              "name": "nutrition",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358eeabefbaf"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_600eef73638e8": {
+          "key": "layout_600eef73638e8",
+          "name": "faq",
+          "label": "FAQ",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6352a30f61c69",
+              "label": "FAQ",
+              "name": "faq",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6352a2777205c"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        }
+      },
+      "button_label": "Add Row",
+      "min": "",
+      "max": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "product"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "modified": 1666777315
+}

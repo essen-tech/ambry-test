@@ -1,0 +1,30 @@
+@import "all_utils";
+
+.cards-row {
+  padding-top: 120px;
+  padding-bottom: 50px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 80px;
+    padding-bottom: 107px;
+  }
+
+  .title {
+    color: $primary;
+    margin-bottom: 88px;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 72px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 50px;
+      margin-bottom: 32px;
+    }
+  }
+}

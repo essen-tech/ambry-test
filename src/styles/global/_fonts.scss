@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "BasisGrotesquePro";
+  font-display: swap;
+  src: url(./fonts/BasisGrotesquePro-Regular.otf) format("opentype"),
+    url(./fonts/BasisGrotesquePro-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ogg";
+  font-display: swap;
+  src: url(./fonts/Ogg-Light.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ogg";
+  font-display: swap;
+  src: url(./fonts/Ogg-Regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ogg";
+  font-display: swap;
+  src: url(./fonts/Ogg-Medium.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ogg";
+  font-display: swap;
+  src: url(./fonts/Ogg-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url(./fonts/icomoon.eot?tfxth4);
+  src: url(./fonts/icomoon.eot?tfxth4#iefix) format("embedded-opentype"),
+    url(./fonts/icomoon.ttf?tfxth4) format("truetype"),
+    url(./fonts/icomoon.woff?tfxth4) format("woff"),
+    url(./fonts/icomoon.svg?tfxth4#icomoon) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+$primary-font: "BasisGrotesquePro";
+$secondary-font: "Ogg";
+
+html,
+body {
+  font-family: $primary-font;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  font-family: $secondary-font;
+}
+
+$media_styles: (
+  xs: (
+    "h1,.h1": (
+      font-size: 56px,
+      line-height: 64px,
+    ),
+    "h2,.h2": (
+      font-size: 34px,
+      line-height: 50px,
+    ),
+    "h3,.h3": (
+      font-size: 21px,
+      line-height: 30px,
+    ),
+    "h4,.h4": (
+      font-size: 21px,
+      line-height: 30px,
+    ),
+    ".body-small": (
+      font-size: 21px,
+      line-height: 30px,
+      color: $primary,
+    ),
+  ),
+  sm: (),
+  md: (
+    "h1,.h1": (
+      font-size: 110px,
+      line-height: 115px,
+    ),
+    "h2,.h2": (
+      font-size: 32px,
+      line-height: 46px,
+    ),
+    "h3,.h3": (
+      font-size: 32px,
+      line-height: 42px,
+    ),
+    "h4,.h4": (
+      font-size: 21px,
+      line-height: 30px,
+    ),
+  ),
+  lg: (
+    "h1,.h1": (
+      font-size: 110px,
+      line-height: 115px,
+    ),
+    "h2,.h2": (
+      font-size: 32px,
+      line-height: 46px,
+    ),
+    "h3,.h3": (
+      font-size: 32px,
+      line-height: 42px,
+    ),
+    "h4,.h4": (
+      font-size: 21px,
+      line-height: 30px,
+    ),
+  ),
+  xl: (
+    "h1,.h1": (
+      font-size: 144px,
+      line-height: 156px,
+    ),
+    "h2,.h2": (
+      font-size: 55px,
+      line-height: 64px,
+    ),
+    "h3,.h3": (
+      font-size: 32px,
+      line-height: 42px,
+      color: $primary,
+    ),
+    "h4,.h4": (
+      font-size: 21px,
+      line-height: 30px,
+      color: $primary,
+    ),
+  ),
+);
+
+@include add_media_styles($media_styles);

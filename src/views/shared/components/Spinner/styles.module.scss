@@ -1,0 +1,12 @@
+@import 'all_utils';
+
+.spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border-width: 3px;
+  border: 8px solid $primary;
+
+  animation: rotating 2s linear infinite;
+}

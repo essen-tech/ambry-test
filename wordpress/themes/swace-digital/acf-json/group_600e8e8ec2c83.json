@@ -1,0 +1,131 @@
+{
+  "key": "group_600e8e8ec2c83",
+  "title": "Recipe",
+  "fields": [
+    {
+      "key": "field_600e97c6e1724",
+      "label": "Sections",
+      "name": "sections",
+      "type": "flexible_content",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "show_in_graphql": 1,
+      "layouts": {
+        "layout_5ced7b693e2f8": {
+          "key": "layout_5ced7b693e2f8",
+          "name": "hero",
+          "label": "Hero",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_635003676b899",
+              "label": "Hero",
+              "name": "hero",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_635000fbb04fd"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffeb4c973a20": {
+          "key": "layout_5ffeb4c973a20",
+          "name": "recipe",
+          "label": "Recipe",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358fb8d46c20",
+              "label": "Recipe",
+              "name": "recipe",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f8c05cf17"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        },
+        "layout_5ffc771f2759c": {
+          "key": "layout_5ffc771f2759c",
+          "name": "recipe_list",
+          "label": "Recipe List",
+          "display": "block",
+          "sub_fields": [
+            {
+              "key": "field_6358f603d99ac",
+              "label": "Recipe List",
+              "name": "recipe_list",
+              "type": "clone",
+              "instructions": "",
+              "required": 0,
+              "conditional_logic": 0,
+              "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+              },
+              "clone": ["group_6358f373f1f78"],
+              "display": "seamless",
+              "layout": "block",
+              "prefix_label": 0,
+              "prefix_name": 0
+            }
+          ],
+          "min": "",
+          "max": ""
+        }
+      },
+      "button_label": "Add Section",
+      "min": "",
+      "max": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "recipe"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": true,
+  "description": "",
+  "modified": 1666775961
+}

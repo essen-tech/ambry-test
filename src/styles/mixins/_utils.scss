@@ -1,0 +1,106 @@
+@mixin add_mapped_styles($styles) {
+  @each $name, $style in $styles {
+    #{$name} {
+      @each $attr, $value in $style {
+        #{$attr}: #{$value};
+      }
+    }
+  }
+}
+
+/*
+  @author: Furan
+
+  Takes a grid-map of styles and adds the to defiend media-queries.
+  xs is defined as the default style and then each style will be added under
+
+  @media (min-width: $breakpoint)
+  
+  Example:
+  $media_styles: (
+    xs: (
+      'h1,.h1': (
+        font-size: 44px,
+        line-height: 48px,
+      ),
+      'h2,.h2': (
+        font-size: 36px,
+        line-height: 40px,
+      ),
+      'h3,.h3': (
+        font-size: 18px,
+        line-height: 24px,
+      ),
+    ),
+    md: (
+      'h1,.h1': (
+        font-size: 56px,
+        line-height: 60px,
+      ),
+      'h2,.h2': (
+        font-size: 40px,
+        line-height: 48px,
+      ),
+      'h3,.h3': (
+        font-size: 20px,
+        line-height: 24px,
+      ),
+    ),
+    xl: (
+      'h1,.h1': (
+        font-size: 72px,
+        line-height: 76px,
+      ),
+      'h2,.h2': (
+        font-size: 48px,
+        line-height: 56px,
+      ),
+      'h3,.h3': (
+        font-size: 24px,
+        line-height: 32px,
+        color: $primary,
+      ),
+    ),
+  );
+*/
+
+@mixin add_media_styles($media_styles) {
+  @each $key, $styles in $media_styles {
+    @if $key == 'xs' {
+      @include add_mapped_styles($styles);
+    } @else {
+      $bp: map-get($grid-breakpoints, $key);
+      @media (min-width: $bp) {
+        @include add_mapped_styles($styles);
+      }
+    }
+  }
+}
+
+@function ftransition($properties, $time, $curve) {
+  $result: '';
+  @each $property in $properties {
+    $i: index($properties, $property);
+    @if $i > 1 {
+      $result: $result + ', ';
+    }
+    $result: $result + $property + ' ' + $time + ' ' + $curve;
+  }
+  @return $result;
+}
+
+/*
+  @author: Furan
+
+  Takes an array of properties and applies a transition for all of them.
+  This is usefull if you dont wan't to use 'all' under transitions because of performance issues.
+
+  example:
+  @include transition((color, background-color), 200ms, ease);
+  result:
+  transition: color 200ms ease, background-color 200ms ease;
+*/
+
+@mixin transition($properties, $time, $curve) {
+  transition: #{ftransition($properties, $time, $curve)};
+}

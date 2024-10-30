@@ -1,0 +1,74 @@
+{
+  "key": "group_6359003d36aa9",
+  "title": "Section Video",
+  "fields": [
+    {
+      "key": "field_635900630df95",
+      "label": "Video File",
+      "name": "video_file",
+      "type": "file",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "library": "all",
+      "min_size": "",
+      "max_size": "",
+      "mime_types": "mp4, mov, wmv, avi, avchd, flv, f4v, mkv, webm"
+    },
+    {
+      "key": "field_635900a40df97",
+      "label": "Background Image",
+      "name": "background_image",
+      "type": "image",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "array",
+      "preview_size": "medium",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": ""
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "page"
+      }
+    ],
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "product"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": "",
+  "active": false,
+  "description": "",
+  "modified": 1666777264
+}

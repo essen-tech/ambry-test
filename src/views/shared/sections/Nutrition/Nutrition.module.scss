@@ -1,0 +1,136 @@
+@import "all_utils";
+
+.nutrition {
+  padding-top: 200px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 120px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 80px;
+  }
+
+  .title {
+    margin-bottom: 56px;
+    color: $primary;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 34px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .image {
+    width: 100%;
+    padding: 0 75px;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+
+  .content {
+    p {
+      color: $primary;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 22px;
+
+      &:last-of-type {
+        margin-top: 44px;
+        margin-bottom: 200px;
+
+        @include media-breakpoint-down(md) {
+          margin-bottom: 64px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 22px;
+          margin-bottom: 32px;
+        }
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    strong {
+      font-weight: 600;
+      display: block;
+      margin-bottom: 22px;
+    }
+  }
+
+  .table-holder {
+    table {
+      width: 100%;
+      text-align: right;
+      color: $primary;
+
+      tr {
+        border-bottom: 1px solid rgba(18, 18, 18, 0.4);
+
+        th {
+          width: 29%;
+          font-family: "Ogg";
+          padding-bottom: 40px;
+          font-size: 21px;
+          line-height: 30px;
+
+          @include media-breakpoint-down(sm) {
+            padding-bottom: 8px;
+            font-family: inherit;
+            font-size: 16px;
+            line-height: 20px;
+            width: 25%;
+            vertical-align: bottom;
+          }
+
+          &:first-of-type {
+            width: 42%;
+            text-align: left;
+
+            @include media-breakpoint-down(sm) {
+              padding-right: 14%;
+              width: 50%;
+            }
+          }
+        }
+
+        td {
+          width: 29%;
+          font-size: 16px;
+          line-height: 20px;
+          padding: 12px 0;
+          @include media-breakpoint-down(sm) {
+            width: 25%;
+          }
+
+          &:first-of-type {
+            text-align: left;
+            width: 42%;
+
+            @include media-breakpoint-down(sm) {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    small {
+      display: block;
+      color: $dark-grey;
+      opacity: 0.4;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 24px;
+    }
+  }
+}

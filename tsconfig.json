@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "lib": ["dom", "es2016", "esnext"],
+    "noEmit": true,
+    "paths": {
+      "~globalstyles/*": ["./styles/*"],
+      "~views": ["./views"],
+      "~views/*": ["./views/*"],
+      "~layouts": ["./views/shared/layouts"],
+      "~layouts/*": ["./views/shared/layouts/*"],
+      "~components": ["./views/shared/components"],
+      "~components/*": ["./views/shared/components/*"],
+      "~blocks": ["./views/shared/blocks"],
+      "~blocks/*": ["./views/shared/blocks/*"],
+      "~sections": ["./views/shared/sections"],
+      "~sections/*": ["./views/shared/sections/*"],
+      "~modals": ["./views/shared/modals"],
+      "~modals/*": ["./views/shared/modals/*"],
+      "~cards": ["./views/shared/cards"],
+      "~cards/*": ["./views/shared/cards/*"],
+      "~shared": ["./views/shared"],
+      "~shared/*": ["./views/shared/*"],
+      "~libs/*": ["./libs/*"],
+      "~models": ["./models"],
+      "~models/*": ["./models/*"],
+      "~stores": ["./stores"],
+      "~stores/*": ["./stores/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "public",
+    "typings/browser.d.ts",
+    "typings/browser/**"
+  ]
+}

@@ -1,0 +1,16 @@
+@import 'all_utils';
+
+$input_trans_attributes: (opacity, top);
+$trans_curve: cubic-bezier(0.2, 1.415, 0.46, 1);
+
+.base {
+  position: relative;
+  top: 300px;
+  opacity: 0;
+  @include transition($input_trans_attributes, 450ms, $trans_curve);
+}
+
+.visible {
+  top: 0;
+  opacity: 1;
+}

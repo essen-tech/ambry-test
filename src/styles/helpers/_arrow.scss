@@ -1,0 +1,27 @@
+.arrow {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid $primary;
+  }
+}
+
+.arrow_yes {
+  @extend .arrow;
+  &:before {
+    left: 18px;
+  }
+}
+
+.arrow_no {
+  @extend .arrow;
+  &:before {
+    left: 75px;
+  }
+}

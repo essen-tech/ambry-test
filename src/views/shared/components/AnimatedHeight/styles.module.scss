@@ -1,0 +1,11 @@
+.base {
+  max-height: 0;
+  transition-property: max-height;
+  transition-timing-function: cubic-bezier(0, 1, 0, 1);
+  overflow: hidden;
+}
+
+.show {
+  max-height: 2000px;
+  transition-timing-function: ease-in;
+}

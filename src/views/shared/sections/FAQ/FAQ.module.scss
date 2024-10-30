@@ -1,0 +1,152 @@
+@import "all_utils";
+
+.faq {
+  padding: 180px 0;
+  background-color: $secondary;
+
+  @include media-breakpoint-down(md) {
+    padding: 120px 0;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 80px;
+  }
+
+  .title {
+    color: $primary;
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 32px;
+      font-size: 55px;
+      line-height: 64px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 32px;
+      font-size: 50px;
+      line-height: 64px;
+    }
+  }
+
+  .accordion-panel {
+    border-top: 1px solid $primary;
+    padding: 32px 0;
+
+    &:last-of-type {
+      border-bottom: 1px solid $primary;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 26px;
+      padding-bottom: 24px;
+    }
+  }
+
+  .accordion-panel-active {
+    .accordion-title {
+      i {
+        transform: rotate(-180deg);
+      }
+    }
+
+    .accordion-content {
+      max-height: 300px;
+    }
+  }
+
+  .accordion-title {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    outline: 0 !important;
+    padding: 0;
+
+    @include media-breakpoint-down(sm) {
+      align-items: flex-start;
+    }
+
+    span {
+      font-family: "Ogg";
+      font-size: 32px;
+      line-height: 40px;
+      display: block;
+      position: absolute;
+
+      @include media-breakpoint-down(md) {
+        font-size: 21px;
+        line-height: 30px;
+      }
+    }
+
+    h4 {
+      text-align: left;
+      font-size: 32px;
+      padding: 0 130px;
+      line-height: 40px;
+      flex: 1 1 auto;
+
+      @include media-breakpoint-down(lg) {
+        padding: 0 70px;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 21px;
+        line-height: 30px;
+        padding-right: 87px;
+        padding-left: 26px;
+      }
+      @include media-breakpoint-down(sm) {
+        padding-right: 40px;
+        padding-left: 26px;
+      }
+    }
+
+    i {
+      display: block;
+      font-size: 21px;
+      line-height: 40px;
+      position: absolute;
+      right: 0;
+      transition: transform 0.4s ease;
+
+      @include media-breakpoint-down(md) {
+        line-height: 30px;
+      }
+    }
+  }
+
+  .accordion-content {
+    color: $primary;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+    padding: 0 130px;
+
+    @include media-breakpoint-down(lg) {
+      padding: 0 70px;
+    }
+    @include media-breakpoint-down(md) {
+      padding-right: 87px;
+      padding-left: 26px;
+    }
+    @include media-breakpoint-down(md) {
+      padding-right: 40px;
+      padding-left: 26px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      padding-top: 14px;
+
+      @include media-breakpoint-down(md) {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 8px;
+      }
+    }
+  }
+}
