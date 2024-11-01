@@ -50,7 +50,7 @@ export const Footer = ({}: Props) => {
           <Col lg={4} className={style.socialMedia}>
             <ul>
               <li>
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://www.instagram.com/ambry_foods/" target="_blank">
                   <i className="icon-instagram"></i>
                 </a>
               </li>
@@ -62,8 +62,8 @@ export const Footer = ({}: Props) => {
                 Hall Farm, Black Horse Road
                 <br /> Skeyton, NR10 5DJ
               </address>
-              <a href="mailto:eathappy@ambryfarms.com" className={style.linkAnimation}>
-                info@ambryfarms.com
+              <a href="mailto:info@ambryfoods.com" className={style.linkAnimation}>
+                info@ambryfoods.com
               </a>
               <br />
             </div>

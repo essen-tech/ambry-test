@@ -274,7 +274,7 @@ export const TextAndImageScatter = ({ section }: Props) => {
           <Col md={6}>
             <figure>
               <img
-                src="https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/Frame-653-1.png"
+                src="https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/Untitled_Artwork-108-1.png"
                 alt=""
               />
             </figure>
