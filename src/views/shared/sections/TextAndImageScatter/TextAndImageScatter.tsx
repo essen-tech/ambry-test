@@ -25,46 +25,25 @@ interface AddressData {
 
 const londonAddressData: AddressData[] = [
   {
-    title: "Lidgates",
-    address: "110 Holand Park Ave, London W11 4UA",
+    title: "Panzers",
+    address: "13-19 Circus Rd, London NW8 6PB",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761abcadb9a683:0xd6181630c7795859?sa=X&ved=1t:8290&ictx=111",
+    url: "www.panzers.co.uk",
+    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/london-1.jpg",
+  },
+  {
+    title: "Lidgate's",
+    address: "110 Holland Park Avenue, London W11 4UA",
     link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48760fe658ef9c0f:0x4d47d74bfa6240a?sa=X&ved=1t:8290&ictx=111",
     url: "www.lidgates.com",
   },
   {
-    title: "Panzers",
-    address: "13-19 Circus Rd, London NW8 6PB",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761abcadb9a683:0xd6181630c7795859?sa=X&ved=1t:8290&ictx=111",
-    url: "www.panzers.com",
-    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/london-1.jpg",
-  },
-  {
     title: "Supermarket of Dreams",
     address: "126 Holland Park Ave, London W11 4UE",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48760fbf9b6a7681:0x9053e1ad59e96800?sa=X&ved=1t:8290&ictx=111",
-    url: "www.supermarketofdreams.com",
+    link: "",
+    url: "",
     image:
       "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/HP_Journal-2.width-2400_hfZvoeEyzozUZSfu-1.jpg",
-  },
-  {
-    title: "Notting Hill Fish & Meat Shop",
-    address: "287-289 Westbourne Grove, London W11 2QA",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48760f3e304e47b5:0xd994a5c908e16475?sa=X&ved=1t:8290&ictx=111",
-    url: "www.nottinghillfishandmeat.com",
-    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/london-2.jpg",
-  },
-  {
-    title: "Newington Greens",
-    address: "109 Newington Green Rd, London N1 4QY",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761c846be02b79:0xb669f8f67e66129b?sa=X&ved=1t:8290&ictx=111",
-    url: "www.newingtongreens.com",
-  },
-  {
-    title: "Clifton Greens",
-    address: "16 Clifton Rd, London W9 1SS",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761aa58215f927:0x8fe336777167137a?sa=X&ved=1t:8290&ictx=111",
-    url: "www.cliftongreens.com",
-    image:
-      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/WhatsApp_Image_2022-05-23_at_10.46.08_AM-768x1024-1.jpg",
   },
   {
     title: "Hampstead Butcher & Providore",
@@ -73,17 +52,18 @@ const londonAddressData: AddressData[] = [
     url: "www.hampsteadbutcher.com",
   },
   {
-    title: "Provenance Village Butcher",
-    address: "33 Kensington Park Rd, London W11 2EU",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761a89b2c3f279:0xab4e6f48d8e28343?sa=X&ved=1t:8290&ictx=111",
-    url: "www.provenancevillagebutcher.com",
-    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/london-3.jpg",
+    title: "All Greens Clifton Road",
+    address: "16 Clifton Rd, London W9 1SS",
+    link: "https://www.google.com/maps/search/16+Clifton?entry=gmail&source=g",
+    url: "www.allgreens.co.uk",
+    image:
+      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/WhatsApp_Image_2022-05-23_at_10.46.08_AM-768x1024-1.jpg",
   },
   {
-    title: "Finchley Nurseries",
-    address: "Burtonhole Ln, London NW7 1AS",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x487617158d698053:0x444dae67eaf708dd?sa=X&ved=1t:8290&ictx=111",
-    url: "www.finchleynurseries.com",
+    title: "All Greens Newington Green",
+    address: "109 Newington Green Road, London N1 4QY",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761c846be02b79:0xb669f8f67e66129b?sa=X&ved=1t:8290&ictx=111",
+    url: "www.allgreens.co.uk",
   },
   {
     title: "The Good Plot",
@@ -92,38 +72,88 @@ const londonAddressData: AddressData[] = [
     url: "www.thegoodplot.com",
   },
   {
-    title: "Battersea General Store",
-    address: "Battersea Power Station, Units 9 and, 10 Circus Rd W, London SW11 8EZ",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x4876053d95d0af85:0x9534c22629fd4a8?sa=X&ved=1t:8290&ictx=111",
-    url: "www.batterseageneralstore.com",
+    title: "Notting Hill Fish & Meat Shop",
+    address: "287-289 Westbourne Grove, London W11 2QA",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48760f3e304e47b5:0xd994a5c908e16475?sa=X&ved=1t:8290&ictx=111",
+    url: "www.nottinghillfishshop.co.uk",
+    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/london-2.jpg",
   },
   {
-    title: "Londis N16",
-    address: "76 Fountayne Rd, London N16 7DT",
-    link: "https://maps.app.goo.gl/ZaS1CgTFurBy6e6DA",
-    url: "www.londisn16.com",
+    title: "Provenance Village Butcher - Notting Hill",
+    address: "33 Kensington Park Rd, London W11 2EU",
+    link: "https://www.google.com/maps/search/33+Kensington+Park+Rd,+London+W11+2EU?entry=gmail&source=g",
+    url: "www.provenancebutcher.com",
+    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/london-3.jpg",
+  },
+  {
+    title: "Provenance Village Butcher - Chelsea",
+    address: "247 Pavillion Road, London SW1X 0BP",
+    link: "https://www.google.com/maps/search/247+Pavillion+Road,+London+SW1X+0BP?entry=gmail&source=g",
+    url: "www.provenancebutcher.com",
+  },
+
+  {
+    title: "Finchley Nurseries",
+    address: "Burtonhole Lane, London NW7 1AS",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x487617158d698053:0x444dae67eaf708dd?sa=X&ved=1t:8290&ictx=111",
+    url: "www.finchleynurseries.com",
+  },
+  {
+    title: "Pomona Foods",
+    address: "179 Haverstock Hill, Belsize Park, London NW3 4QS",
+    link: "https://www.google.com/maps/search/179+Haverstock+Hill,+Belsize+Park,+London+NW3+4QS?entry=gmail&source=g",
+    url: "www.pomonafoods.co.uk",
   },
 ];
 
 const norfolkAddressData: AddressData[] = [
   {
+    title: "The Greengrocers",
+    address: "Earlham House Shops, 2-4 Earlham Road, Norwich, NR2 3PD",
+    link: "https://www.google.com/maps/search/2-4+Earlham+Road,+Norwich,+NR2+3PD?entry=gmail&source=g",
+    url: "www.thegreengrocers.co.uk",
+    image:
+      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/the-green-grocers-norwich-1-1.jpg",
+  },
+  {
     title: "Jarrolds Food Hall",
     address: "1, 11 London St, Norfolk NR2 1JF",
     link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d9e32f428ad8a1:0x79be73e3b6a89c0e?sa=X&ved=1t:8290&ictx=111",
-    url: "www.jarroldsfoodhall.com",
+    url: "www.jarrolds.co.uk",
     image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/norfolk-2.jpg",
   },
   {
-    title: "Earlham Rd Greengrocers",
-    address: "13-19 Circus Rd, London NW8 6PB",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761abcadb9a683:0xd6181630c7795859?sa=X&ved=1t:8290&ictx=111",
-    url: "www.earlhamrdgreengrocers.com",
+    title: "AG Meale",
+    address: "Wayford Nurseries, Stalham, Norwich NR12 9LJ",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d756b1ffc7e733:0x65025aa5995b3ee9?sa=X&ved=1t:8290&ictx=111",
+    url: "www.agmeale.co.uk",
   },
   {
-    title: "Hotblack Stores",
-    address: "2-4, Earlham House, Shop, Norwich NR2 3PD",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d9e1d62eff39cd:0x50b311b8701edb1a?sa=X&ved=1t:8290&ictx=111",
-    url: "www.hotblackstores.com",
+    title: "Green Pastures",
+    address: "Mill Rd, Bergh Apton, Norwich NR15 1BQ",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d9fad801cf9857:0xf7e56561324d4bd8?sa=X&ved=1t:8290&ictx=111",
+    url: "www.greenpasturesnursery.co.uk",
+  },
+  {
+    title: "White’s Butcher",
+    address: "16 Red Lion St, Aylsham, Norwich NR11 6ER",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d75c310878f16f:0x660f76fb2a9c6870?sa=X&ved=1t:8290&ictx=111",
+    url: "www.whitesbutchers.co.uk",
+    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/norfolk-3.jpg",
+  },
+  {
+    title: "Algy’s Farm Shop",
+    address: "Billingford Rd, Dereham NR20 5PW",
+    link: "www.algys.com",
+    url: "www.algys.co.uk",
+    image:
+      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/415919057_856333813162755_6063727267605355927_n-1.jpg",
+  },
+  {
+    title: "J. Jones Family Butcher",
+    address: "38 King Street, Thetford, IP24 2AP",
+    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x4877fb16dc3a86c9:0x64fa031c6cc02cb9?sa=X&ved=1t:8290&ictx=111",
+    url: "",
   },
   {
     title: "Baker and Larner",
@@ -132,46 +162,12 @@ const norfolkAddressData: AddressData[] = [
     url: "www.bakerandlarner.com",
     image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/norfolk-1.jpg",
   },
-  {
-    title: "AG Meale",
-    address: "Wayford Nurseries, Stalham, Norwich NR12 9LJ",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d756b1ffc7e733:0x65025aa5995b3ee9?sa=X&ved=1t:8290&ictx=111",
-    url: "www.agmeale.com",
-  },
-  {
-    title: "White’s Butcher",
-    address: "16 Red Lion St, Aylsham, Norwich NR11 6ER",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d75c310878f16f:0x660f76fb2a9c6870?sa=X&ved=1t:8290&ictx=111",
-    url: "www.whitesbutcher.com",
-    image: "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/10/norfolk-3.jpg",
-  },
-  {
-    title: "J. Jones Butcher",
-    address: "24 Broad St, Whittlesey, Peterborough PE7 1HA",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x4877fb16dc3a86c9:0x64fa031c6cc02cb9?sa=X&ved=1t:8290&ictx=111",
-    url: "www.jonesbutcher.com",
-  },
+
   {
     title: "Robertson’s Butcher",
     address: "Market Pl, Reepham, Norwich NR10 4JJ",
     link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d76141f107b8cf:0x762ed921cca2b3ff?sa=X&ved=1t:8290&ictx=111",
-    url: "www.robertsonsbutcher.com",
-  },
-  {
-    title: "Green Pastures",
-    address: "Mill Rd, Bergh Apton, Norwich NR15 1BQ",
-    link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d9fad801cf9857:0xf7e56561324d4bd8?sa=X&ved=1t:8290&ictx=111",
-    url: "www.greenpastures.com",
-    image:
-      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/the-green-grocers-norwich-1-1.jpg",
-  },
-  {
-    title: "Algy’s Farm Shop",
-    address: "Billingford Rd, Dereham NR20 5PW",
-    link: "www.algys.com",
-    url: "www.algys.com",
-    image:
-      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/415919057_856333813162755_6063727267605355927_n-1.jpg",
+    url: "",
   },
 ];
 
