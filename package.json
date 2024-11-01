@@ -41,7 +41,8 @@
     "react-hook-form": "^6.15.1",
     "recompose": "^0.30.0",
     "reset-css": "^5.0.1",
-    "sass": "^1.52.1"
+    "sass": "^1.52.1",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
