@@ -42,6 +42,8 @@ const londonAddressData: AddressData[] = [
     address: "126 Holland Park Ave, London W11 4UE",
     link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48760fbf9b6a7681:0x9053e1ad59e96800?sa=X&ved=1t:8290&ictx=111",
     url: "www.supermarketofdreams.com",
+    image:
+      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/HP_Journal-2.width-2400_hfZvoeEyzozUZSfu-1.jpg",
   },
   {
     title: "Notting Hill Fish & Meat Shop",
@@ -61,6 +63,8 @@ const londonAddressData: AddressData[] = [
     address: "16 Clifton Rd, London W9 1SS",
     link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x48761aa58215f927:0x8fe336777167137a?sa=X&ved=1t:8290&ictx=111",
     url: "www.cliftongreens.com",
+    image:
+      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/WhatsApp_Image_2022-05-23_at_10.46.08_AM-768x1024-1.jpg",
   },
   {
     title: "Hampstead Butcher & Providore",
@@ -158,12 +162,16 @@ const norfolkAddressData: AddressData[] = [
     address: "Mill Rd, Bergh Apton, Norwich NR15 1BQ",
     link: "https://www.google.com/maps/place//data=!4m2!3m1!1s0x47d9fad801cf9857:0xf7e56561324d4bd8?sa=X&ved=1t:8290&ictx=111",
     url: "www.greenpastures.com",
+    image:
+      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/the-green-grocers-norwich-1-1.jpg",
   },
   {
     title: "Algy’s Farm Shop",
     address: "Billingford Rd, Dereham NR20 5PW",
     link: "www.algys.com",
     url: "www.algys.com",
+    image:
+      "https://wholesum-wp-uploads.s3.amazonaws.com/uploads/2024/11/415919057_856333813162755_6063727267605355927_n-1.jpg",
   },
 ];
 
